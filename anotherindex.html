@@ -52,6 +52,24 @@
                 </td>
             </tr>
         </tfoot>
-    </table>
+    </table><br><br>
+
+    <form method="post">
+        <label for="firstname">First Name:</label><input id="firstname" name="first" required><br><br>
+        <label for="lastname">Last Name:</label><input id="lastname" name="last" required><br><br>
+        Password:<input type="password" id="password"><br><br>
+        Gender<input type="radio" name="gender"value="male"> male<input type="radio" name="gender" value="female">female<br><br>
+        Hobbies:<select name="hobbies">
+            <option value="1">Sports</option>
+            <option value="2">Video Games</option>
+            <option value="3">TV Shows</option>
+            <option value="4">Reading</option>
+            <option value="5">Building</option>
+        </select><br><br>
+        Tell us more about yourself:<textarea name="about" cols="30" rows="5">default text</textarea><br><br>
+        <input type="checkbox" name="spam">I would like to recieve spam<br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
 </body>
 </html>
