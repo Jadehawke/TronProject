@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+<a href ="javascript: showmenu()">Navigation</a>
+    <div id ="showthis" style ="display:none;">This is the hidden text.</div>
+    <form action="myaction.php" method="post">
+        <div><label>Email</label><input class="typebox" type="text" placeholder="email"/></div>
+        <div><label>Password</label><input class="typebox" type="text" placeholder="password"/></div>
+        <div><label>Phone Number</label><input class="typebox" type="text" placeholder="(___)___-___"/></div>
+        <div> <label>Favorite Color</label><input class="typebox" type="text" placeholder="favorite color"/></div>
+        <div class ="overflowhidden"><label>Gender</label><span>male</span> <input type="radio" name="gender"> <span>female</span> <input type="radio" name="gender"/></div>
+        <input type="submit" value="submit"/>
+
+    </form>
+
+</body>
+
+<script>
+    function showmenu(){
+        document.getElementById("showthis").style.display = "block";
+    }
+</script>
+</html>
